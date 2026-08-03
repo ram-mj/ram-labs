@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% macro home_page(section) %}
+
+<main>
+    <article>
+        <section class="profile">{% include "partial/profile.html" %}</section>
+        <section>{{ section.content | safe }}</section>
+    </article>
+</main>
+
+{% endmacro home_page %} {% block main_content %} {{
+self::home_page(section=section) }} {% endblock main_content %}

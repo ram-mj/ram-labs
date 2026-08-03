@@ -1,0 +1,103 @@
+<style>
+    /* Hero Container */
+    .homepage-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    .homepage-hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .homepage-hero-title {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .homepage-hero-subtitle {
+        font-size: 1.25rem;
+        margin: 0;
+        opacity: 0.85;
+    }
+
+    /* Avatar with Outer Circle Ring */
+    .author__avatar {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+
+        /* The Outer Circle Effect */
+        border-radius: 50%;
+        border: 1px solid var(--global-border-color, #eaeaea);
+        padding: 5px; /* Creates the gap between the image and the border */
+        background-color: var(
+            --global-bg-color,
+            #ffffff
+        ); /* Fills the gap with your background color */
+        box-sizing: border-box; /* Ensures padding doesn't break the width/height */
+    }
+
+    .author__avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Prevents image distortion */
+        border-radius: 50%;
+    }
+
+    /* Responsive: Side-by-side on larger screens */
+    @media screen and (min-width: 768px) {
+        .homepage-hero {
+            flex-direction: row;
+            text-align: left;
+            gap: 3rem;
+            justify-content: center;
+            padding: 3rem 0;
+        }
+
+        .homepage-hero-title {
+            font-size: 2.5rem;
+        }
+
+        .author__avatar {
+            width: 175px;
+            height: 175px;
+        }
+    }
+</style>
+
+<div class="homepage-hero">
+    <div class="homepage-hero-text">
+        <h1 class="homepage-hero-title">Hi, I'm Ram</h1>
+        <p class="homepage-hero-subtitle">
+            Welcome to my humble space in the internet;
+        </p>
+        {#
+        <div class="socials">
+            {% if config.markdown.external_links_target_blank %} {% set
+            link_attrs = "rel='me noopener' target='_blank'" %} {% else %} {%
+            set link_attrs = "rel='me'" %} {% endif %} {% for social in
+            config.extra.socials %}
+            <a {{ link_attrs | safe }} href="{{ social.url }}" class="social">
+                <img
+                    alt="{{ social.name }}"
+                    src="{{ get_url(path='icons/social/' ~ social.icon ~ '.svg') }}"
+                />
+            </a>
+            {% endfor %}
+        </div>
+        #}
+    </div>
+
+    {% if section.extra.avatar %}
+    <div class="author__avatar">
+        <img src="{{ section.extra.avatar }}" alt="Ram" fetchpriority="high" />
+    </div>
+    {% endif %}
+</div>

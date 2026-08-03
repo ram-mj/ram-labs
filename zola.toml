@@ -1,0 +1,39 @@
+# The URL the site will be built for
+base_url = "https://ram-labs.net"
+title = "ram laboratories"
+theme = "apollo"
+
+taxonomies = [{ name = "tags" }]
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+
+[extra]
+theme = "toggle"
+
+
+# socials
+socials = [
+    { name = "linkedin", url = "https://www.linkedin.com/in/janakiram-wlp8s0/", icon = "linkedin" },
+    { name = "youtube", url = "https://youtube.com/ram-labs", icon = "youtube" },
+    { name = "github", url = "https://github.com/ram-mj/", icon = "github" },
+]
+
+# menu
+menu = [
+  { name = "/posts", url = "/posts", weight = 1 },
+  { name = "/projects", url = "/projects", weight = 2 },
+  { name = "/hire-me", url = "/hire", weight = 3 },
+  { name = "/tags", url = "/tags", weight = 4 },
+]
+
+# posts
+toc = true
+fancy_code = true
+dynamic_note = true           # a note that can be toggled
+mathjax = true
