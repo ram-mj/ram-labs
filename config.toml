@@ -20,7 +20,7 @@ theme = "toggle"
 # socials
 socials = [
     { name = "linkedin", url = "https://www.linkedin.com/in/janakiram-wlp8s0/", icon = "linkedin" },
-    { name = "youtube", url = "https://youtube.com/ram-labs", icon = "youtube" },
+    { name = "youtube", url = "https://youtube.com/ram-laboratories", icon = "youtube" },
     { name = "github", url = "https://github.com/ram-mj/", icon = "github" },
 ]
 
