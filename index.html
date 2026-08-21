@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" class="dark light">
+
+    <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="base" content="https:&#x2F;&#x2F;ram-labs.net" />
+
+    
+
+    
+
+    
+    
+    
+        <title>
+    ram laboratories
+</title>
+        
+            <meta property="og:title" content="
+    ram laboratories
+" />
+        
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+    
+
+    
+    
+        <link href=https://ram-labs.net/fonts.css rel="stylesheet" />
+    
+
+    
+    
+
+    
+    
+        <script defer src=https://ram-labs.net/js/codeblock.js></script>
+    
+
+    
+    
+        <script defer src=https://ram-labs.net/js/toc.js></script>
+    
+
+    
+    
+        <script defer src=https://ram-labs.net/js/note.js></script>
+    
+
+    
+        <script>
+            MathJax = {
+                tex: {
+                    inlineMath: [
+                        ['$', '$'],
+                        ['\\(', '\\)']
+                    ]
+                }
+            };
+        </script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
+        </script>
+    
+
+    
+    
+
+
+    
+
+    
+    
+
+    
+    
+        <link rel="stylesheet"
+              type="text/css"
+              href="https://ram-labs.net/theme/light.css" />
+        <link id="darkModeStyle"
+              rel="stylesheet"
+              type="text/css"
+              href="https://ram-labs.net/theme/dark.css" />
+    
+
+    
+        
+            <script>
+                var themeToggleMode = "toggle";
+            </script>
+        
+        <script src=https://ram-labs.net/js/themetoggle.js></script>
+
+        
+            <script>
+                setTheme(getSavedTheme());
+            </script>
+        
+    
+
+
+    <link rel="stylesheet"
+          type="text/css"
+          media="screen"
+          href="https://ram-labs.net/main.css" />
+
+    
+
+    <script defer
+                    src="https://ram-labs.net/search_index.en.js?h=2a93696d0bb1289f3486"></script>
+        <script defer
+                src="https://ram-labs.net/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e"></script>
+</head>
+
+
+    <body>
+        
+        <div class="left-content">
+            
+            
+        </div>
+
+        <div class="content">
+            <nav>
+    <div class="left-nav">
+        
+            <a href=https:&#x2F;&#x2F;ram-labs.net>ram laboratories</a>
+        
+
+
+        <div class="socials">
+            
+                
+            
+            
+                <a rel='me' href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;janakiram-wlp8s0&#x2F;" class="social">
+                    <img alt="linkedin"
+                         src="https://ram-labs.net/icons/social/linkedin.svg" />
+                </a>
+            
+                <a rel='me' href="https:&#x2F;&#x2F;youtube.com&#x2F;ram-laboratories" class="social">
+                    <img alt="youtube"
+                         src="https://ram-labs.net/icons/social/youtube.svg" />
+                </a>
+            
+                <a rel='me' href="https:&#x2F;&#x2F;github.com&#x2F;ram-mj&#x2F;" class="social">
+                    <img alt="github"
+                         src="https://ram-labs.net/icons/social/github.svg" />
+                </a>
+            
+        </div>
+    </div>
+
+    <div class="right-nav">
+        
+            <a href=https://ram-labs.net/posts style="margin-right: 0.5em">&#x2F;posts</a>
+        
+            <a href=https://ram-labs.net/projects style="margin-right: 0.5em">&#x2F;projects</a>
+        
+            <a href=https://ram-labs.net/hire style="margin-right: 0.5em">&#x2F;hire-me</a>
+        
+            <a href=https://ram-labs.net/tags style="margin-right: 0.5em">&#x2F;tags</a>
+        
+
+        
+            <button id="search-button"
+                    class="search-button"
+                    title="$SHORTCUT to open search">
+                <img src="https://ram-labs.net/icons/search.svg"
+                     alt="Search"
+                     class="search-icon" />
+            </button>
+
+            <div id="searchModal"
+                 class="search-modal js"
+                 role="dialog"
+                 aria-labelledby="modalTitle">
+                <div id="modal-content">
+                    <h1 id="modalTitle" class="page-header">
+                        Search
+                    </h1>
+                    <div id="searchBar">
+                        <input id="searchInput"
+                               role="combobox"
+                               autocomplete="off"
+                               spellcheck="false"
+                               aria-expanded="false"
+                               aria-controls="results-container"
+                               placeholder="Search..." />
+                        <button id="clear-search" class="clear-button" title="Clear search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="results-container">
+                        <div id="results-info">
+                            <span id="zero_results" style="display: none;">No results</span>
+                            <span id="one_result" style="display: none;">1 result</span>
+                            <span id="many_results" style="display: none;">$NUMBER results</span>
+                        </div>
+                        <div id="results" role="listbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        
+        
+            <a id="dark-mode-toggle"
+               onclick="toggleTheme(); event.preventDefault();"
+               href="#">
+                <img src="https://ram-labs.net/icons/sun.svg" id="sun-icon" alt="Light" />
+                <img src="https://ram-labs.net/icons/moon.svg"
+                     id="moon-icon"
+                     style="filter: invert(1)"
+                     alt="Dark" />
+                
+            </a>
+
+            <!-- Initialize the theme toggle icons -->
+            <script>
+                updateItemToggleTheme()
+            </script>
+        
+    </div>
+</nav>
+
+
+            
+             
+
+<main>
+    <article>
+        <section class="profile"><style>
+    /* Hero Container */
+    .homepage-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    .homepage-hero-text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .homepage-hero-title {
+        font-size: 2rem;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .homepage-hero-subtitle {
+        font-size: 1.25rem;
+        margin: 0;
+        opacity: 0.85;
+    }
+
+    /* Avatar with Outer Circle Ring */
+    .author__avatar {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+
+        /* The Outer Circle Effect */
+        border-radius: 50%;
+        border: 1px solid var(--global-border-color, #eaeaea);
+        padding: 5px; /* Creates the gap between the image and the border */
+        background-color: var(
+            --global-bg-color,
+            #ffffff
+        ); /* Fills the gap with your background color */
+        box-sizing: border-box; /* Ensures padding doesn't break the width/height */
+    }
+
+    .author__avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Prevents image distortion */
+        border-radius: 50%;
+    }
+
+    /* Responsive: Side-by-side on larger screens */
+    @media screen and (min-width: 768px) {
+        .homepage-hero {
+            flex-direction: row;
+            text-align: left;
+            gap: 3rem;
+            justify-content: center;
+            padding: 3rem 0;
+        }
+
+        .homepage-hero-title {
+            font-size: 2.5rem;
+        }
+
+        .author__avatar {
+            width: 175px;
+            height: 175px;
+        }
+    }
+</style>
+
+<div class="homepage-hero">
+    <div class="homepage-hero-text">
+        <h1 class="homepage-hero-title">Hi, I'm Ram</h1>
+        <p class="homepage-hero-subtitle">
+            Welcome to my humble space in the internet;
+        </p>
+        
+    </div>
+
+    
+    <div class="author__avatar">
+        <img src="&#x2F;images&#x2F;rams-profile.png" alt="Ram" fetchpriority="high" />
+    </div>
+    
+</div>
+</section>
+        <section><p>I am an engineer who passionate about science and engineering, having expertise in system administration and
+network engineering. I have keen interest in Maths, Physics, Computers, Electronics, Automobiles and Astronomy,
+keeping up with dialy advances.</p>
+<p>Over the years, I've been exploring and experimenting in different technologies, getting to know them. The engineering
+behind the working of these technologies that drive our dialy lives really excites me to know more and more.</p>
+<p>As a person who is paronoid about his privacy and security, I maintain minimal footprint in the internet,
+and I'm self-hosting all of my digital services Mail, and Cloud, in my very own homelab servers which allows
+me control over my data. My homelab is my playground for experimenting with virtualization, new linux distros,
+security and networking stuff. I love to mess with up with linux (a lot), tinkering it, and sometimes even breaking :),
+I'm more of a hardware guy, I love messing up with kernels, embeded systems, and hardward. I prefer using FOSS stack,
+every technology I ran in my laptop, homelab, and servers are running on opensource software,  limiting myself from using
+proprietary software.</p>
+<p>Feel free to keep an eye on my blog posts, I've been actively maintain my blog, and going to document
+all my projects, reflections, learning and findings on various technologies. Hopefully you find something
+interesting and useful to you.</p>
+<h2 id="contact-me">Contact Me</h2>
+<p><strong>Mail:</strong> <a href="mailto:hello@ram-labs.net">hello@ram-labs.net</a> - here is my <a href="/.well-known/pub.key">public key</a>, encrypted messages are appreciated.</p>
+<p><strong>Signal:</strong> Please request my Signal contact through another medium.</p>
+<p>You can also connect with me on <a rel="external" href="https://www.linkedin.com/in/janakiram-wlp8s0">LinkedIn</a> as well.</p>
+</section>
+    </article>
+</main>
+
+ 
+
+            
+                
+            
+
+            
+        </div>
+
+        <div class="right-content">
+            
+            
+        </div>
+        
+    </body>
+
+</html>
