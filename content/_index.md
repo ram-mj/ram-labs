@@ -25,7 +25,9 @@ Feel free to keep an eye on my blog posts, I've been actively maintain my blog, 
 all my projects, reflections, learning and findings on various technologies. Hopefully you find something
 interesting and useful to you.
 
-## Connect with me
-Please write me here [rams@ram-labs.net](mailto:rams@ram-labs.net) - here is my [public key](/pub.key), encrypted messages are appreciated.
+## Contact Me
+**Mail:** [hello@ram-labs.net](mailto:hello@ram-labs.net) - here is my [public key](/.well-known/pub.key), encrypted messages are appreciated.
 
----
+**Signal:** Please request my Signal contact through another medium.
+
+You can also connect with me on [LinkedIn](https://www.linkedin.com/in/janakiram-wlp8s0) as well.
