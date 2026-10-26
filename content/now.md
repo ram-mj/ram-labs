@@ -1,5 +1,5 @@
 +++
-title = "Now"
+title = "now"
 path = "now"
 date = "2026-06-03"
 

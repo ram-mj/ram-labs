@@ -1,5 +1,5 @@
 +++
-title = "Projects"
+title = "projects"
 sort_by = "weight"
 template = "cards.html"
 in_search_index = false
